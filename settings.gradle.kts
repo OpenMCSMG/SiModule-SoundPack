@@ -1,2 +1,2 @@
-val funName = ""
-rootProject.name = "SiModule-${funName}"
+val funName = "SoundPack"
+rootProject.name = "SiModule-SoundPack"

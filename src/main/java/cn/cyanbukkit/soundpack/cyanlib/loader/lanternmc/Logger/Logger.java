@@ -1,9 +1,9 @@
 // Decompiled with: CFR 0.152
 // Class Version: 8
-package cn.cyanbukkit.putfunname.cyanlib.loader.lanternmc.Logger;
+package cn.cyanbukkit.soundpack.cyanlib.loader.lanternmc.Logger;
 
 
-import cn.cyanbukkit.putfunname.cyanlib.loader.lanternmc.Logger.adapters.LogAdapter;
+import cn.cyanbukkit.soundpack.cyanlib.loader.lanternmc.Logger.adapters.LogAdapter;
 
 import java.util.Objects;
 

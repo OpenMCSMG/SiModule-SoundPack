@@ -1,7 +1,8 @@
-package cn.cyanbukkit.putfunname.cyanlib.launcher;
+package cn.cyanbukkit.soundpack.cyanlib.launcher;
 
-import cn.cyanbukkit.putfunname.command.ModeEntry;
-import cn.cyanbukkit.putfunname.cyanlib.loader.KotlinBootstrap;
+import cn.cyanbukkit.putfunname.command.FastPlaySound;
+import cn.cyanbukkit.putfunname.listener.JoinLoader;
+import cn.cyanbukkit.soundpack.cyanlib.loader.KotlinBootstrap;
 import org.bukkit.command.Command;
 import org.bukkit.command.SimpleCommandMap;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -89,14 +90,12 @@ public class CyanPluginLauncher extends JavaPlugin {
     }
 
 
-    @Override
-    public void onLoad() {
-    }
-
 
     @Override
     public void onEnable() {
-        registerCommand(ModeEntry.INSTANCE);
+        saveDefaultConfig();
+        getServer().getPluginManager().registerEvents(JoinLoader.INSTANCE, this);
+        registerCommand(FastPlaySound.INSTANCE);
     }
 
     @Override
